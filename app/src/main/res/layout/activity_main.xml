@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
-    android:background="#52EAE1E1"
-    android:orientation="vertical"
-    tools:context="sewar_1170001.android.aaaignment1.MainActivity">
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    tools:context=".SignUpActivity">
 
 
     <LinearLayout
@@ -15,15 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="719dp"
         android:layout_marginTop="5dp"
-        android:background="#B6B3B3"
+        android:background="#CCCCFF"
         android:orientation="vertical"
-        android:paddingBottom="25dp">
+        android:paddingBottom="25dp"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/txtFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FirstName"
+            android:text="UserName"
+
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <EditText
@@ -32,23 +32,7 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
-            android:hint="First Name"
-            tools:targetApi="o" />
-
-        <TextView
-            android:id="@+id/txtLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Last Name"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-        <EditText
-            android:id="@+id/edtLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Last Name"
+            android:hint="UserName"
             tools:targetApi="o" />
 
 
@@ -59,15 +43,16 @@
             android:text="email"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-        <EditText
-            android:id="@+id/signUpEmailTextInput"
-            android:layout_width="match_parent"
+         <EditText
             android:layout_height="wrap_content"
-            android:autofillHints=""
+            android:layout_width="match_parent"
+            android:id="@+id/signUpEmailTextInput"
+            tools:targetApi="o"
+            android:hint="email"
             android:ems="10"
-            android:hint="email_hint"
-            android:inputType="textEmailAddress"
-            tools:targetApi="o" />
+            android:autofillHints=""
+            android:inputType="textEmailAddress"/>
+
 
         <TextView
             android:id="@+id/SignUpPasswordTitle"
@@ -86,6 +71,15 @@
             android:inputType="textPassword"
             tools:targetApi="o" />
 
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="hobbies"
+            tools:targetApi="o" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -95,34 +89,40 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="155dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="152dp"
+            android:layout_height="42dp" />
 
-            app:layout_constraintVertical_bias="0.498" />
+
+        <CheckBox
+            android:id="@+id/agreementCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Remember me" />
+
+        <Button
+            android:id="@+id/Button"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="login data"
+            android:onClick="loginData"/>
 
         <Button
             android:id="@+id/signUpButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
 
-            android:background="#632020"
-            android:backgroundTint="#6A6565"
-            android:onClick="sendData"
-            android:text="sign_up" />
+            android:text="save" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="184dp"
-            app:srcCompat="@drawable/register" />
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/im" />
+
     </LinearLayout>
+
+
 
 
 </LinearLayout>

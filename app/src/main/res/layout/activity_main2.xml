@@ -27,31 +27,113 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin" />
 
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="273dp"
-        android:layout_height="280dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
         android:background="#B5B2B2"
         android:foregroundGravity="center"
-        android:text="TextView"
-        android:textAlignment="center"
+        android:text="Specialization"
+
         android:textSize="24sp"
         android:textStyle="bold"
         map:layout_anchorGravity="center" />
+    <EditText
+        android:id="@+id/edtspecialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:foregroundGravity="center"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint=""
+        tools:targetApi="o"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="180dp"
+        android:background="#B5B2B2"
+        android:text="language"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtlanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint=""
+        tools:targetApi="o" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="42dp"
         android:background="?attr/colorPrimary" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        map:srcCompat="@drawable/qq" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="260dp"
+        android:background="#B5B2B2"
+        android:text="Skills"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtskills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint=""
+        tools:targetApi="o" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="340dp"
+        android:background="#B5B2B2"
+        android:text="Information about yourself"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:autofillHints=""
+        android:ems="10"
+
+        android:gravity="center"
+        android:hint=""
+        tools:targetApi="o" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_marginTop="450dp"
+        android:onClick="saveData"
+        map:srcCompat="@drawable/ss" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
